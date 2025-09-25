@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balangay of the Forgotten Wiki</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📖 Balangay of the Forgotten Wiki</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="roles.html">Roles</a>
+      <a href="bosses.html">Bosses</a>
+      <a href="creatures.html">Creatures</a>
+      <a href="maps.html">Maps</a>
+      <a href="cards.html">Themes</a>
+    </nav>
+
+    <div class="content">
+      <h2>About the Game</h2>
+      <p>
+        Welcome to <strong>Balangay of the Forgotten</strong>, a
+        tabletop-inspired fantasy adventure filled with mythical bosses,
+        creatures, maps, and unique themes. This wiki serves as your guide to
+        explore the world and its mysteries.
+      </p>
+      <img src="yourimage.png" alt="Game Overview" class="overview-img" />
+    </div>
+
+    <footer>
+      <p>Balangay of the Forgotten Wiki © 2025</p>
+    </footer>
+    <script>
+      // highlight active nav link
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll("nav a").forEach((link) => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
