@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bosses - Balangay of the Forgotten Wiki</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>⚔️ Roles</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="roles.html">Roles</a>
+      <a href="bosses.html">Bosses</a>
+      <a href="creatures.html">Creatures</a>
+      <a href="maps.html">Maps</a>
+      <a href="cards.html">Themes</a>
+    </nav>
+
+    <div class="content">
+      <h2>Roles List</h2>
+      <ul class="wiki-list">
+        <li>
+          <a href="/roles/mandirigma.html"
+            ><img src="/assets/roles/Mandirigma.png" alt="Bathala" /><span>Mandirigma</span></a
+          >
+        </li>
+        <li>
+          <a href="/roles/bagani.html"
+            ><img src="/assets/roles/Bagani.png" alt="Kapre" /><span>Bagani</span></a
+          >
+        </li>
+        <li>
+          <a href="/roles/babaylan.html"
+            ><img src="/assets/roles/Babaylan.png" alt="Mayari" /><span>Babaylan</span></a
+          >
+        </li>
+        <li>
+          <a href="/roles/mangangayaw.html"
+            ><img src="/assets/roles/Mangangayaw.png" alt="Manananggal" /><span
+              >Mangangayaw</span
+            ></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>Balangay of the Forgotten Wiki © 2025</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll("nav a").forEach((link) => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

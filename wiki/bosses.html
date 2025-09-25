@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bosses - Balangay of the Forgotten Wiki</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>👹 Bosses</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="roles.html">Roles</a>
+      <a href="bosses.html">Bosses</a>
+      <a href="creatures.html">Creatures</a>
+      <a href="maps.html">Maps</a>
+      <a href="cards.html">Themes</a>
+    </nav>
+
+    <div class="content">
+      <h2>Bosses List</h2>
+      <ul class="wiki-list">
+        <li>
+          <a href="/boss/bathala.html"
+            ><img src="yourimage.png" alt="Bathala" /><span>Bathala</span></a
+          >
+        </li>
+        <li>
+          <a href="/boss/mayari.html"
+            ><img src="yourimage.png" alt="Mayari" /><span>Mayari</span></a
+          >
+        </li>
+        <li>
+          <a href="/boss/apolaki.html"
+            ><img src="yourimage.png" alt="Apolaki" /><span>Apolaki</span></a
+          >
+        </li>
+        <li>
+          <a href="/boss/bakunawa.html"
+            ><img src="yourimage.png" alt="Bakunawa" /><span>Bakunawa</span></a
+          >
+        </li>
+        <li>
+          <a href="/boss/minokawa.html"
+            ><img src="yourimage.png" alt="Minokawa" /><span>Minokawa</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>Balangay of the Forgotten Wiki © 2025</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll("nav a").forEach((link) => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

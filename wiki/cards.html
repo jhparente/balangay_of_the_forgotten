@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards - Balangay of the Forgotten Wiki</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+        table-layout: fixed;
+      }
+
+      th,
+      td {
+        border: 1px solid #00bfff;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background: #1c2533;
+        color: #00bfff;
+      }
+
+      td {
+        background: #141a24;
+      }
+      th:first-child,
+      td:first-child {
+        width: 35%; /* 🔹 Card column smaller */
+      }
+      th:last-child,
+      td:last-child {
+        width: 75%; /* 🔹 Effect column wider */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🃏 Cards</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="roles.html">Roles</a>
+      <a href="bosses.html">Bosses</a>
+      <a href="creatures.html">Creatures</a>
+      <a href="maps.html">Maps</a>
+      <a href="cards.html">Themes</a>
+    </nav>
+
+    <div class="content">
+      <h2>Special Cards (Equipment & Buffs)</h2>
+      <ul>
+        <li>Helmet → Gain +10% Dodge Rate</li>
+        <li>Mighty Sword → Unlock 1 extra move set slot</li>
+        <li>Charm of Resilience → Reduce Curse gain by 1 per turn</li>
+        <li>Spirit Lantern → Gain +20 Sanity after each voyage</li>
+      </ul>
+
+      <h2>Ship Upgrade Cards</h2>
+      <table>
+        <tr>
+          <th>Card</th>
+          <th>Effect</th>
+        </tr>
+        <tr>
+          <td>Reinforced Hull</td>
+          <td>+20% Ship HP</td>
+        </tr>
+        <tr>
+          <td>Enchanted Sails</td>
+          <td>+1 island travel speed</td>
+        </tr>
+        <tr>
+          <td>Stormbreaker Mast</td>
+          <td>Ignore 1 storm per voyage</td>
+        </tr>
+        <tr>
+          <td>Cannon Array</td>
+          <td>+200 dmg to boss at start of battle</td>
+        </tr>
+      </table>
+
+      <h2>Spirit Crew Cards</h2>
+      <table>
+        <tr>
+          <th>Card</th>
+          <th>Effect</th>
+        </tr>
+        <tr>
+          <td>Sirena Navigator</td>
+          <td>+20% success on sea travel events</td>
+        </tr>
+        <tr>
+          <td>Kapre Lookout</td>
+          <td>Reveal boss move once per voyage</td>
+        </tr>
+        <tr>
+          <td>Tikbalang Scout</td>
+          <td>Skip 1 random encounter</td>
+        </tr>
+        <tr>
+          <td>Duwende Artisan</td>
+          <td>Forge 1 extra Charm after boss</td>
+        </tr>
+      </table>
+
+      <h2>Ritual Cards</h2>
+      <table>
+        <tr>
+          <th>Card</th>
+          <th>Effect</th>
+        </tr>
+        <tr>
+          <td>Sanity Dance</td>
+          <td>+50 Sanity to each player</td>
+        </tr>
+        <tr>
+          <td>Curse Cleansing</td>
+          <td>Reduce Curse by 2 stacks party-wide</td>
+        </tr>
+        <tr>
+          <td>Ancestral Blessing</td>
+          <td>Next voyage: +10% crit</td>
+        </tr>
+        <tr>
+          <td>Blood Offering</td>
+          <td>Sacrifice 50 HP each → +30 stamina party-wide</td>
+        </tr>
+      </table>
+
+      <h2>Forged Charm Cards</h2>
+      <table>
+        <tr>
+          <th>Card</th>
+          <th>Effect</th>
+        </tr>
+        <tr>
+          <td>Charm of Fury</td>
+          <td>+10% Damage</td>
+        </tr>
+        <tr>
+          <td>Charm of Endurance</td>
+          <td>+10% HP</td>
+        </tr>
+        <tr>
+          <td>Charm of Focus</td>
+          <td>+10% Accuracy</td>
+        </tr>
+        <tr>
+          <td>Charm of Resilience</td>
+          <td>-1 Curse gained per turn</td>
+        </tr>
+      </table>
+    </div>
+
+    <footer>
+      <p>Balangay of the Forgotten Wiki © 2025</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll("nav a").forEach((link) => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

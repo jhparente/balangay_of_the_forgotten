@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maps - Balangay of the Forgotten Wiki</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🗺️ Maps</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="roles.html">Roles</a>
+      <a href="bosses.html">Bosses</a>
+      <a href="creatures.html">Creatures</a>
+      <a href="maps.html">Maps</a>
+      <a href="cards.html">Themes</a>
+    </nav>
+
+    <div class="content">
+      <h2>Maps List</h2>
+      <ul class="wiki-list">
+        <li>
+          <a href="map_kaluwalhatian.html"
+            ><img src="yourimage.png" alt="Kaluwalhatian" /><span
+              >Kaluwalhatian</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="map_bundok_pulag.html"
+            ><img src="yourimage.png" alt="Bundok Pulag" /><span
+              >Bundok Pulag</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="map_daragang_magayon.html"
+            ><img src="yourimage.png" alt="Daragang Magayon" /><span
+              >Daragang Magayon</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="map_dagat_ng_kabisayaan.html"
+            ><img src="yourimage.png" alt="Dagat ng Kabisayaan" /><span
+              >Dagat ng Kabisayaan</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="map_libra.html"
+            ><img src="yourimage.png" alt="Libra" /><span>Libra</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>Balangay of the Forgotten Wiki © 2025</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentPage = window.location.pathname.split("/").pop();
+        document.querySelectorAll("nav a").forEach((link) => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
