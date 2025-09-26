@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0f1a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #1c2533;
+  padding: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #00bfff;
+}
+
+nav {
+  background: #141a24;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #00bfff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #141a24;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.text-section {
+  flex: 2;
+}
+
+.image-section {
+  flex: 1;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #00bfff;
+}
+
+h2 {
+  color: #00bfff;
+  border-bottom: 1px solid #00bfff;
+  padding-bottom: 5px;
+}
+
+p {
+  line-height: 28px;
+}
+
+
+
+#boss, #kampon {
+  max-width: 200px;
+  margin-left: 50px;
+}
+
+#boss img{
+  width: 100%;
+}
+
+#boss a, #kampon a{
+  text-decoration: none;
+  color: white;
+}
+
+#boss a h3, #kampon a h3{
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+#boss a h3:hover{
+  color: rgb(84, 84, 255);
+}
+
+footer {
+  background: #1c2533;
+  text-align: center;
+  padding: 10px;
+  color: #888;
+  flex-shrink: 0;
+}
