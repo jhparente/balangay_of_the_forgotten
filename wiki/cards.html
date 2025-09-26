@@ -3,51 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cards - Balangay of the Forgotten Wiki</title>
-    <link rel="stylesheet" href="../style.css" />
-    <style>
-      ul {
-        list-style-type: disc;
-        margin: 10px 0 0 30px;
-        line-height: 30px;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 15px 0;
-        table-layout: fixed;
-      }
-
-      th,
-      td {
-        border: 1px solid #00bfff;
-        padding: 15px;
-        text-align: left;
-      }
-
-      th {
-        background: #1c2533;
-        color: #00bfff;
-      }
-
-      td {
-        background: #141a24;
-      }
-      th:first-child,
-      td:first-child {
-        width: 35%; /* 🔹 Card column smaller */
-      }
-      th:last-child,
-      td:last-child {
-        width: 75%; /* 🔹 Effect column wider */
-      }
-    </style>
+    <title>Cards - Wiki</title>
+    <link rel="stylesheet" href="../css/rules.css" />
   </head>
   <body>
-    <header>
-      <h1>🃏 Cards</h1>
-    </header>
+    <header>Cards</header>
 
     <nav>
       <a href="../index.html">Home</a>
@@ -55,130 +15,225 @@
       <a href="bosses.html">Bosses</a>
       <a href="mini_boss.html">Mini Boss</a>
       <a href="maps.html">Maps</a>
-      <a href="cards.html">Cards</a>
       <a href="relics.html">Relics</a>
+      <a href="cards.html">Game Flow and Rules</a>
     </nav>
 
     <div class="content">
-      <h2>Special Cards (Equipment & Buffs)</h2>
-      <ul>
-        <li>Helmet → Gain +10% Dodge Rate</li>
-        <li>Mighty Sword → Unlock 1 extra move set slot</li>
-        <li>Charm of Resilience → Reduce Curse gain by 1 per turn</li>
-        <li>Spirit Lantern → Gain +20 Sanity after each voyage</li>
-      </ul>
-      <br /><br />
+      <div class="text-section">
+        <h2>Game Flow and Rules</h2>
 
-      <h2>Ship Upgrade Cards</h2>
-      <table>
-        <tr>
-          <th>Card</th>
-          <th>Effect</th>
-        </tr>
-        <tr>
-          <td>Reinforced Hull</td>
-          <td>+20% Ship HP</td>
-        </tr>
-        <tr>
-          <td>Enchanted Sails</td>
-          <td>+1 island travel speed</td>
-        </tr>
-        <tr>
-          <td>Stormbreaker Mast</td>
-          <td>Ignore 1 storm per voyage</td>
-        </tr>
-        <tr>
-          <td>Cannon Array</td>
-          <td>+200 dmg to boss at start of battle</td>
-        </tr>
-      </table>
+        <h3>1) Prep (GM, before players arrive)</h3>
+        <p>
+          Ang GM ay naghahanda ng mesa, cards, dice, at musika bago dumating ang
+          mga manlalaro.
+        </p>
 
-      <h2>Spirit Crew Cards</h2>
-      <table>
-        <tr>
-          <th>Card</th>
-          <th>Effect</th>
-        </tr>
-        <tr>
-          <td>Sirena Navigator</td>
-          <td>+20% success on sea travel events</td>
-        </tr>
-        <tr>
-          <td>Kapre Lookout</td>
-          <td>Reveal boss move once per voyage</td>
-        </tr>
-        <tr>
-          <td>Tikbalang Scout</td>
-          <td>Skip 1 random encounter</td>
-        </tr>
-        <tr>
-          <td>Duwende Artisan</td>
-          <td>Forge 1 extra Charm after boss</td>
-        </tr>
-      </table>
+        <h3>2) Opening the Table</h3>
+        <ul>
+          <li>[Brief History – Pambungad]</li>
+          <li>[Pagtawag sa mga Manlalaro]</li>
+          <li>[Paglalahad ng Apat na Diyos]</li>
+          <li>[Paglipat sa Manlalakbay]</li>
+          <li>[Mga Papel]</li>
+        </ul>
 
-      <h2>Ritual Cards</h2>
-      <table>
-        <tr>
-          <th>Card</th>
-          <th>Effect</th>
-        </tr>
-        <tr>
-          <td>Sanity Dance</td>
-          <td>+50 Sanity to each player</td>
-        </tr>
-        <tr>
-          <td>Curse Cleansing</td>
-          <td>Reduce Curse by 2 stacks party-wide</td>
-        </tr>
-        <tr>
-          <td>Ancestral Blessing</td>
-          <td>Next voyage: +10% crit</td>
-        </tr>
-        <tr>
-          <td>Blood Offering</td>
-          <td>Sacrifice 50 HP each → +30 stamina party-wide</td>
-        </tr>
-      </table>
+        <h3>3) Introduction to Cards</h3>
 
-      <h2>Forged Charm Cards</h2>
-      <table>
-        <tr>
-          <th>Card</th>
-          <th>Effect</th>
-        </tr>
-        <tr>
-          <td>Charm of Fury</td>
-          <td>+10% Damage</td>
-        </tr>
-        <tr>
-          <td>Charm of Endurance</td>
-          <td>+10% HP</td>
-        </tr>
-        <tr>
-          <td>Charm of Focus</td>
-          <td>+10% Accuracy</td>
-        </tr>
-        <tr>
-          <td>Charm of Resilience</td>
-          <td>-1 Curse gained per turn</td>
-        </tr>
-      </table>
+        <h4>Balangay of the Forgotten Card</h4>
+        <div class="card-image">
+          <img src="yourimage.png" alt="Balangay Card Placeholder" />
+        </div>
+
+        <h4>Role Cards</h4>
+        <p>
+          Bawat manlalaro ay may 4 na Role Cards na may nakatalang HP at
+          natatanging kakayahan na gagamitin sa laban.
+        </p>
+        <div class="card-image">
+          <img src="../assets/boss/Apolaki.png" alt="Role Card Placeholder" />
+          <img src="../assets/boss/Apolaki.png" alt="Role Card Placeholder" />
+          <img src="../assets/boss/Apolaki.png" alt="Role Card Placeholder" />
+          <img src="../assets/boss/Apolaki.png" alt="Role Card Placeholder" />
+        </div>
+
+        <h4>Skill Cards</h4>
+        <p>
+          Mayroon kayong 5 Skill Cards, ngunit kapag 4 ang manlalaro, tatlo
+          lamang ang madadala. Kapag 3 ang manlalaro, apat ang puwede.
+        </p>
+
+        <h5>Mandirigma Skill Cards</h5>
+        <div class="card-image">
+          <img src="../assets/boss/Apolaki.png" alt="Role Card Placeholder" />
+          <img src="../assets/boss/Apolaki.png" alt="Role Card Placeholder" />
+          <img src="../assets/boss/Apolaki.png" alt="Role Card Placeholder" />
+          <img src="../assets/boss/Apolaki.png" alt="Role Card Placeholder" />
+        </div>
+
+        <h5>Bagani Skill Cards</h5>
+        <div class="card-image">
+          <img src="yourimage.png" alt="Bagani Skill Cards" />
+          <img src="yourimage.png" alt="Bagani Skill Cards" />
+          <img src="yourimage.png" alt="Bagani Skill Cards" />
+          <img src="yourimage.png" alt="Bagani Skill Cards" />
+        </div>
+
+        <h5>Babaylan Skill Cards</h5>
+        <div class="card-image">
+          <img src="yourimage.png" alt="Babaylan Skill Cards" />
+          <img src="yourimage.png" alt="Babaylan Skill Cards" />
+          <img src="yourimage.png" alt="Babaylan Skill Cards" />
+          <img src="yourimage.png" alt="Babaylan Skill Cards" />
+        </div>
+
+        <h5>Mangangayaw Skill Cards</h5>
+        <div class="card-image">
+          <img src="yourimage.png" alt="Mangangayaw Skill Cards" />
+          <img src="yourimage.png" alt="Mangangayaw Skill Cards" />
+          <img src="yourimage.png" alt="Mangangayaw Skill Cards" />
+          <img src="yourimage.png" alt="Mangangayaw Skill Cards" />
+        </div>
+
+        <h4>Map Cards</h4>
+        <p>
+          Ito ang magsisilbing gabay sa mga lugar at landas na inyong tatahakin
+          sa laro.
+        </p>
+        <div class="card-image">
+          <img src="yourimage.png" alt="Map Card Placeholder" />
+          <img src="yourimage.png" alt="Map Card Placeholder" />
+          <img src="yourimage.png" alt="Map Card Placeholder" />
+          <img src="yourimage.png" alt="Map Card Placeholder" />
+        </div>
+
+        <h4>Main Boss Cards</h4>
+        <div class="card-image">
+          <img src="yourimage.png" alt="Main Boss Card" />
+          <img src="yourimage.png" alt="Main Boss Card" />
+          <img src="yourimage.png" alt="Main Boss Card" />
+          <img src="yourimage.png" alt="Main Boss Card" />
+        </div>
+
+        <h4>Mini Boss Cards</h4>
+        <div class="card-image">
+          <img src="yourimage.png" alt="Mini Boss Card" />
+          <img src="yourimage.png" alt="Mini Boss Card" />
+          <img src="yourimage.png" alt="Mini Boss Card" />
+          <img src="yourimage.png" alt="Mini Boss Card" />
+        </div>
+        <p>
+          Main Boss at Mini Boss Cards – Nagtatala ang mga ito ng lakas at
+          kakayahan ng mga kalabang haharapin ninyo.
+        </p>
+
+        <h4>Item Cards</h4>
+        <p>
+          Special Item Cards – Nakukuha ang mga ito mula sa mga natalong mini
+          boss at nagagamit upang palakasin o protektahan ang inyong grupo sa
+          mga susunod na Dungeon.
+        </p>
+        <ul class="item-list">
+          <li>
+            <b>Balaraw</b> – ×2 Dungeon Buff (+5% → +15% DMG to all).<br />
+            Makukuha pagkatapos talunin ang dungeon mini boss ng Dagat ng
+            Kabisayaan.
+            <div class="item-image">
+              <img src="balaraw.png" alt="Balaraw Item" />
+            </div>
+          </li>
+
+          <li>
+            <b>Kalasag</b> – ×1 Dungeon Buff (+15% → +25% DEF to 2 players).<br />
+            Makukuha pagkatapos talunin ang mini boss ng Daragang Magayon.
+            <div class="item-image">
+              <img src="kalasag.png" alt="Kalasag Item" />
+            </div>
+          </li>
+
+          <li>
+            <b>Agos-Oras</b> – ×4 rounds no CD (lahat ng skills walang cooldown
+            sa susunod na round).<br />
+            Makukuha pagkatapos talunin ang mini boss ng Bundok Pulag.
+            <div class="item-image">
+              <img src="agosoras.png" alt="Agos-Oras Item" />
+            </div>
+          </li>
+        </ul>
+        <h4>Turn Pieces</h4>
+        <p>
+          Mga palatandaan na ginagamit upang masubaybayan ang cooldown ng bawat
+          skill ninyo.
+        </p>
+        <div class="card-image">
+          <img src="yourimage.png" alt="Turn Piece" />
+        </div>
+
+        <h4>Playing Mat</h4>
+        <p>
+          Ang lugar kung saan ipupwesto ng mga player ang kanilang mga cards na
+          napili.
+        </p>
+        <div class="playing_mat-image">
+          <img src="../assets/rules/playing_mat.jpg" alt="Playing Mat" />
+        </div>
+
+        <h3>4) Introduction to Dice</h3>
+        <ul class="dice-list">
+          <li>
+            <b>d4</b> – tumutukoy kung sino ang tatargetin ng halimaw o diyos.
+            <div class="dice-image">
+              <img src="d4.png" alt="d4 Dice" />
+            </div>
+          </li>
+
+          <li>
+            <b>d10</b> – tumutukoy sa halaga ng epekto o pinsala ng skill o
+            espesyal na galaw.
+            <div class="dice-image">
+              <img src="d10.png" alt="d10 Dice" />
+            </div>
+          </li>
+
+          <li>
+            <b>d20</b> – para sa bawat atake. (1 = mintis, 20 = critical, ang
+            iba ay normal).
+            <div class="dice-image">
+              <img src="d20.png" alt="d20 Dice" />
+            </div>
+          </li>
+
+          <li>
+            <b>d100</b> – para sa kakaibang pangyayari o espesyal na
+            kaganapan—dito sinusubok ang swerte o malas.
+            <div class="dice-image">
+              <img src="d100.png" alt="d100 Dice" />
+            </div>
+          </li>
+        </ul>
+
+        <h3>5) Core Loop</h3>
+        <ol>
+          <li>Choose Role → Select Preset Stats → Pick 3 Skills.</li>
+          <li>
+            Voyage → Choose Map → Encounter Mini Boss → Optional Mini Boss
+            Fight.
+          </li>
+          <li>Victory → Gain Special Drops (Item Cards - Boost Stats).</li>
+          <li>Continue the Dungeon → Encounter Main Boss → Main Boss Fight.</li>
+          <li>Victory → Gain Special Drops (Memory Fragment - Relic).</li>
+          <li>
+            Return to Balangay Hub → Plan ahead and choose the next dungeon.
+          </li>
+          <li>Next Voyage → Repeat until all 4 Main Bosses are defeated.</li>
+          <li>
+            All 4 Main Bosses Defeated → Build the 4 Memory Fragments → Victory
+            → End of Game.
+          </li>
+        </ol>
+      </div>
     </div>
 
-    <footer>
-      <p>Balangay of the Forgotten Wiki © 2025</p>
-    </footer>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const currentPage = window.location.pathname.split("/").pop();
-        document.querySelectorAll("nav a").forEach((link) => {
-          if (link.getAttribute("href") === currentPage) {
-            link.classList.add("active");
-          }
-        });
-      });
-    </script>
+    <footer>© 2025 Balangay of the Forgotten Wiki</footer>
   </body>
 </html>

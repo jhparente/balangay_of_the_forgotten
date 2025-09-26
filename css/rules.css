@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0f1a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #1c2533;
+  padding: 15px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #00bfff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background: #141a24;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #1c2533;
+}
+
+nav a.active {
+  background: #00bfff;
+  color: #000;
+}
+
+.content {
+  flex: 1;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #141a24;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #00bfff;
+  border-bottom: 1px solid #00bfff;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+p {
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.card-image {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.card-image img {
+  max-width: 180px;
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+}
+
+.dice-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.dice-list li {
+  margin-bottom: 25px;
+}
+
+.dice-image {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dice-image img {
+  max-width: 100px;
+  border: 2px solid #00bfff;
+  border-radius: 6px;
+}
+
+.item-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.item-list li {
+  margin-bottom: 30px;
+}
+
+.item-image {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.item-image img {
+  max-width: 120px;
+  border: 2px solid #00bfff;
+  border-radius: 8px;
+}
+
+.playing_mat-image {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.playing_mat-image img {
+  max-width: 700px;
+  min-width: 100px;
+  height: 500px;
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+}
+  
+footer {
+  background: #1c2533;
+  text-align: center;
+  padding: 10px;
+  color: #888;
+  flex-shrink: 0;
+}
