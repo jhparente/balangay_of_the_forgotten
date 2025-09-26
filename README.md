@@ -1,1 +1,1 @@
-taena mo lex
+taenamo lex
