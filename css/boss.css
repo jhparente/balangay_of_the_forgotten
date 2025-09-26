@@ -105,6 +105,15 @@ th {
   color: #00bfff;
 }
 
+p a{
+  color: white;
+  text-decoration: none;
+}
+
+p a:hover{
+  color: rgb(84, 84, 255);
+}
+
 #mapa, #kampon {
   max-width: 400px;
   min-width: 200px;
@@ -137,4 +146,53 @@ footer {
   padding: 10px;
   color: #888;
   flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+  .content {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 0;
+    gap: 10px;
+  }
+  .image-section {
+    order: 0;
+  }
+  .text-section {
+    order: 1;
+  }
+  header {
+    font-size: 20px;
+    padding: 10px 5px;
+  }
+  nav {
+    padding: 5px;
+  }
+  nav a {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .image-section img {
+    max-width: 80%;
+    border-radius: 8px;
+  }
+  #mapa, #kampon {
+    max-width: 20%;
+    margin-left: 0;
+  }
+  th, td {
+    padding: 8px;
+    font-size: 14px;
+  }
+  footer {
+    font-size: 14px;
+    padding: 8px 2px;
+  }
 }
