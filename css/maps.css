@@ -69,6 +69,14 @@ p {
   line-height: 28px;
 }
 
+p a{
+  color: white;
+  text-decoration: none;
+}
+
+p a:hover{
+  color: rgb(84, 84, 255);
+}
 
 
 #boss, #kampon {
