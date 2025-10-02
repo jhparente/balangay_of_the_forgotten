@@ -17,6 +17,10 @@
       <a href="../wiki/maps.html">Maps</a>
       <a href="../wiki/relics.html">Relics</a>
       <a href="../wiki/cards.html">Game Flow and Rules</a>
+      <div id="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button onclick="searchWiki()">Go</button>
+      </div>
     </nav>
 
     <div class="content">
@@ -88,5 +92,47 @@
     </div>
 
     <footer>© 2025 Balangay of the Forgotten Wiki</footer>
+
+    <script>
+      function searchWiki() {
+        const query = document.querySelector('#search-bar input').value.toLowerCase();
+        const pages = {
+          roles: '../wiki/roles.html',
+          bosses: '../wiki/bosses.html',
+          'mini boss': '../wiki/mini_boss.html',
+          maps: '../wiki/maps.html',
+          relics: '../wiki/relics.html',
+          cards: '../wiki/cards.html',
+          mandirigma: 'mandirigma.html',
+          bagani: 'bagani.html',
+          babaylan: 'babaylan.html',
+          mangangayaw: 'mangangayaw.html',
+          apolaki: '../boss/apolaki.html',
+          bathala: '../boss/bathala.html',
+          mayari: '../boss/mayari.html',
+          bakunawa: '../boss/bakunawa.html',
+          minokawa: '../boss/minokawa.html',
+          silang: '../relics/silang.html',
+          luhain: '../relics/luhain.html',
+          korona: '../relics/korona.html',
+          pangil: '../relics/pangil.html',
+          kapre: '../mini_boss/kapre.html',
+          manananggal: '../mini_boss/manananggal.html',
+          tiyanak: '../mini_boss/tiyanak.html',
+          sirena: '../mini_boss/sirena.html',
+          kaluwalhatian: '../maps/kaluwalhatian.html',
+          'bundok pulag': '../maps/bundok_pulag.html',
+          'daragang magayon': '../maps/daragang_magayon.html',
+          'dagat ng kabisayaan': '../maps/dagat_kabisayaan.html'
+        };
+        for (const [key, value] of Object.entries(pages)) {
+          if (query.includes(key)) {
+            window.location.href = value;
+            return;
+          }
+        }
+        alert('No matching page found.');
+      }
+    </script>
   </body>
 </html>
